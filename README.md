@@ -1,6 +1,6 @@
 # A9Dex - A Detailed Asphalt 9: Legends Guide
 
-Download APk from Releases here: https://github.com/adnyey/A9Dex/releases
+Download APK from Releases here: https://github.com/adnyey/A9Dex/releases
 or Direct Download the latest version from here: https://github.com/adnyey/A9Dex/releases/download/1.0/1.0.-.23.August.2018.apk
 
 ## Features
