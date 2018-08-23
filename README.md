@@ -4,6 +4,8 @@
 ![Size](https://img.shields.io/badge/Size-3.41%20MB-lightgrey.svg)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
+![](images/A9Dex_SS.png)
+
 ## Features
 
 * Performance statistics (Top speed, Nitro, Handling, Acceleration etc)
