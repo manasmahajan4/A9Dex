@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1",
-  "latestVersionCode": "1",
-  "url": "about:blank",
+  "latestVersion": "1.0",
+  "latestVersionCode": "8",
+  "url": "https://github.com/adnyey/A9Dex/releases",
   "releaseNotes": [
-    "- Holder"
+    "- First Release"
   ]
 }
