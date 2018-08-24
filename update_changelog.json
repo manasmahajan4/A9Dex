@@ -1,8 +1,10 @@
 {
-  "latestVersion": "1.0",
-  "latestVersionCode": "8",
-  "url": "https://github.com/adnyey/A9Dex/releases/download/1.0/1.0.-.23.August.2018.apk",
+  "latestVersion": "1.1",
+  "latestVersionCode": "9",
+  "url": "https://github.com/adnyey/A9Dex/releases/download/1.1/A9Dex_1_dot_1_24_August_2018.apk",
   "releaseNotes": [
-    "- First Release"
+    "- Corrected Numerous Blueprint errors",
+    "- Updated contributors",
+    "- Recommended to update"
   ]
 }
