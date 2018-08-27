@@ -1,10 +1,12 @@
 {
-  "latestVersion": "1.2.2",
-  "latestVersionCode": "10",
-  "url": "https://github.com/javiersantos/AppUpdater/releases",
-  "releaseNotes": [
-    "- First evolution",
-    "- Second evolution",
-    "- Bug fixes"
+  "rome": [
+    {
+        "track_id": "45",
+        "link": "https://www.youtube.com/watch?v=wUSeUXvXtC8"
+    },
+    {
+        "track_id": "5",
+        "link": "https://www.youtube.com/watch?v=Uf1pG8X4irI"
+    }
   ]
 }
