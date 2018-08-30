@@ -3,6 +3,7 @@
   "latestVersionCode": "11",
   "url": "https://github-production-release-asset-2e65be.s3.amazonaws.com/145806564/4a726a80-abdb-11e8-8634-bafb68ca2e08?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180830%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180830T175133Z&X-Amz-Expires=300&X-Amz-Signature=e9231a5aa2c28e4a8e16c3ba8522532912e723ee0f6ffda81fd31e344cc1df14&X-Amz-SignedHeaders=host&actor_id=16127573&response-content-disposition=attachment%3B%20filename%3DA9Dex_1.3.-.29.August.2018.apk&response-content-type=application%2Fvnd.android.package-archive",
   "releaseNotes": [
-    "- Added MAX information of numerous cars"
+    "- Added MAX information of numerous cars",
+    "- Fixed Not able to download APK from Chrome browser. Try pressing Update button again"
   ]
 }
