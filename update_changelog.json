@@ -1,9 +1,9 @@
 {
-  "latestVersion": "1.3",
-  "latestVersionCode": "11",
-  "url": "https://www.dropbox.com/s/bup1b5x0yf57fy7/A9Dex_1.3%20-%2029%20August%202018.apk?dl=0",
+  "latestVersion": "1.4",
+  "latestVersionCode": "12",
+  "url": "https://www.dropbox.com/s/07etrlg4djmwkye/A9Dex_1.4.apk?dl=0",
   "releaseNotes": [
-    "- Added MAX information of numerous cars",
-    "- (NEW) Dropbox link added. Try pressing update if it did not work earlier"
+    "- Completed MAX info of mroe cars",
+    "- Added more contributors/sources"
   ]
 }
