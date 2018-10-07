@@ -1,9 +1,11 @@
 {
-  "latestVersion": "1.4",
-  "latestVersionCode": "12",
-  "url": "https://www.dropbox.com/s/07etrlg4djmwkye/A9Dex_1.4.apk?dl=0",
+  "latestVersion": "1.5",
+  "latestVersionCode": "13",
+  "url": "https://www.dropbox.com/s/w6rfpstwxkwl2au/A9Dex_1.5.apk?dl=0",
   "releaseNotes": [
-    "- Completed MAX info of more cars",
-    "- Added more contributors/sources"
+    "- Updated info of buffed cars",
+    "- Added Elise and F50",
+    "- Corrected some wrong data",
+    "- Added MAX info of some more cars"
   ]
 }
