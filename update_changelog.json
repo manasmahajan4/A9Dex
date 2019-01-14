@@ -1,11 +1,10 @@
 {
-  "latestVersion": "1.6",
-  "latestVersionCode": "14",
-  "url": "https://www.dropbox.com/s/e31d5ukgq06cxqv/A9Dex_1.6.apk?dl=0",
+  "latestVersion": "1.7",
+  "latestVersionCode": "15",
+  "url": "https://www.dropbox.com/s/ob6hocidfz3ke2w/A9Dex_1.7.apk?dl=0",
   "releaseNotes": [
-    "- Added new cars",
-    "- App now supports Android P",
-    "- Corrected some wrong data",
-    "- Added MAX info of some more cars"
+    "- Corrected some more incorrect info",
+    "- Added new contributors",
+    "- Changed contributors' links to YouTube channel links"
   ]
 }
