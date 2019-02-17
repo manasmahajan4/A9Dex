@@ -1,10 +1,9 @@
 {
-  "latestVersion": "1.7",
-  "latestVersionCode": "15",
-  "url": "https://www.dropbox.com/s/ob6hocidfz3ke2w/A9Dex_1.7.apk?dl=0",
+  "latestVersion": "1.8",
+  "latestVersionCode": "16",
+  "url": "https://www.dropbox.com/s/6lb1b09533uzyeo/A9Dex_1.8.apk?dl=0",
   "releaseNotes": [
-    "- Corrected some more incorrect info",
-    "- Added new contributors",
-    "- Changed contributors links to YouTube channel links"
+    "- Added new cars",
+    "- Added the comparison feature(finally!)"
   ]
 }
