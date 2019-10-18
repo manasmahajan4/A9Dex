@@ -1,9 +1,10 @@
 {
-  "latestVersion": "1.11",
-  "latestVersionCode": "19",
-  "url": "https://www.dropbox.com/s/ykyqkthx1o2e0kx/A9Dex_1.11.apk?dl=0",
+  "latestVersion": "1.12",
+  "latestVersionCode": "20",
+  "url": "https://www.dropbox.com/s/ikh0sefnnkn2ad0/A9Dex_1.12.apk?dl=0",
   "releaseNotes": [
-    "- Added new cars",
-    "- Corrected old data"
+    "- Added new caribbean and extra tracks",
+    "- Corrected old data",
+    "- Added new cars"
   ]
 }
