@@ -1,10 +1,9 @@
 {
-  "latestVersion": "1.12",
-  "latestVersionCode": "20",
-  "url": "https://www.dropbox.com/s/ikh0sefnnkn2ad0/A9Dex_1.12.apk?dl=0",
+  "latestVersion": "1.13",
+  "latestVersionCode": "21",
+  "url": "https://www.dropbox.com/s/051onuwms13zpz5/A9Dex_1.13.apk?dl=0",
   "releaseNotes": [
-    "- Added new caribbean and extra tracks",
-    "- Corrected old data",
-    "- Added new cars"
+    "- Completed missing info of latest cars",
+    "- Added indicator to show if fastest route link available or not"
   ]
 }
