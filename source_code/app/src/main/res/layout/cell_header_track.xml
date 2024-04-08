@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/san_francis"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/parentName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rajdhani_b"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:text="SCOTLAND"
+        android:textAllCaps="true"
+        android:textColor="#C0000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

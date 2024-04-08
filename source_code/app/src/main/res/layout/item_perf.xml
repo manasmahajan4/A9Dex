@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="#0D47A1"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/perf_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/nav_settings"
+            android:tint="@color/white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/nav_normal_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id='@+id/perf_name'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raj_font"
+                android:text="TOP SPEED"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/perf_fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginBottom="-15dp"
+                    android:fontFamily="@font/rajdhani_b"
+                    android:gravity="center_vertical"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="60dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/max_s_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <adnyey.notitia.a9.VerticalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:fontFamily="@font/raj_font"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp"
+                            android:text="STOCK"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/perf_stock"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#2962FF"
+                            android:fontFamily="@font/raj_font"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="100.0"
+                            android:textColor="@color/white"
+                            android:textSize="26dp" />
+
+                        <adnyey.notitia.a9.VerticalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/raj_font"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp"
+                            android:text="MAX"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/perf_max"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#FF1744"
+                            android:fontFamily="@font/raj_font"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="100.0"
+                            android:textColor="@color/white"
+                            android:textSize="26dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/back_list"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="DATA SOURCES / Contributors"
+        android:fontFamily="@font/raj_font"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/srcList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_list"
+        android:scrollbars="none" />
+
+</LinearLayout>

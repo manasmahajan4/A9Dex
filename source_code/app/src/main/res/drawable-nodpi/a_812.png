@@ -1,0 +1,162 @@
+SystemProperties.set(ZRAM_ENABLED_PROPERTY, desiredPropertyValue);
+            // Schedule writeback only if zram is being enabled.
+            if (desiredPropertyValue.equals("1")
+                    && mContext.getResources().getBoolean(
+                        com.android.internal.R.bool.config_zramWriteback)) {
+                ZramWriteback.scheduleZramWriteback(mContext);
+            }
+        }
+    }
+
+    private void refreshIsolatedStorageSettings() {
+        // Always copy value from newer DeviceConfig location
+        Settings.Global.putString(mResolver,
+                Settings.Global.ISOLATED_STORAGE_REMOTE,
+                DeviceConfig.getProperty(DeviceConfig.NAMESPACE_STORAGE, ISOLATED_STORAGE_ENABLED));
+
+        final int local = Settings.Global.getInt(mContext.getContentResolver(),
+                Settings.Global.ISOLATED_STORAGE_LOCAL, 0);
+        final int remote = Settings.Global.getInt(mContext.getContentResolver(),
+                Settings.Global.ISOLATED_STORAGE_REMOTE, 0);
+
+        // Walk down precedence chain; we prefer local settings first, then
+        // remote settings, before finally falling back to hard-coded default.
+        final boolean res;
+        if (local == -1) {
+            res = false;
+        } else if (local == 1) {
+            res = true;
+        } else if (remote == -1) {
+            res = false;
+        } else if (remote == 1) {
+            res = true;
+        } else {
+            res = true;
+        }
+
+        Slog.d(TAG, "Isolated storage local flag " + local + " and remote flag "
+                + remote + " resolved to " + res);
+        SystemProperties.set(StorageManager.PROP_ISOLATED_STORAGE, Boolean.toString(res));
+    }
+
+    /**
+     * MediaProvider has a ton of code that makes assumptions about storage
+     * paths never changing, so we outright kill them to pick up new state.
+     */
+    @Deprecated
+    private void killMediaProvider(List<UserInfo> users) {
+        if (users == null) return;
+
+        final long token = Binder.clearCallingIdentity();
+        try {
+            for (UserInfo user : users) {
+                // System user does not have media provider, so skip.
+                if (user.isSystemOnly()) continue;
+
+                final ProviderInfo provider = mPmInternal.resolveContentProvider(
+                        MediaStore.AUTHORITY, PackageManager.MATCH_DIRECT_BOOT_AWARE
+                                | PackageManager.MATCH_DIRECT_BOOT_UNAWARE,
+                        user.id);
+                if (provider != null) {
+                    final IActivityManager am = ActivityManager.getService();
+                    try {
+                        am.killApplication(provider.applicationInfo.packageName,
+                                UserHandle.getAppId(provider.applicationInfo.uid),
+                                UserHandle.USER_ALL, "vold reset");
+                        // We only need to run this once. It will kill all users' media processes.
+                        break;
+                    } catch (RemoteException e) {
+                    }
+                }
+            }
+        } finally {
+            Binder.restoreCallingIdentity(token);
+        }
+    }
+
+    @GuardedBy("mLock")
+    private void addInternalVolumeLocked() {
+        // Create a stub volume that represents internal storage
+        final VolumeInfo internal = new VolumeInfo(VolumeInfo.ID_PRIVATE_INTERNAL,
+                VolumeInfo.TYPE_PRIVATE, null, null);
+        internal.state = VolumeInfo.STATE_MOUNTED;
+        internal.path = Environment.getDataDirectory().getAbsolutePath();
+        mVolumes.put(internal.id, internal);
+    }
+
+    private void initIfBootedAndConnected() {
+        Slog.d(TAG, "Thinking about init, mBootCompleted=" + mBootCompleted
+                + ", mDaemonConnected=" + mDaemonConnected);
+        if (mBootCompleted && mDaemonConnected
+                && !StorageManager.isFileEncryptedNativeOnly()) {
+            // When booting a device without native support, make sure that our
+            // user directories are locked or unlocked based on the current
+            // emulation status.
+            final boolean initLocked = StorageManager.isFileEncryptedEmulatedOnly();
+            Slog.d(TAG, "Setting up emulation state, initlocked=" + initLocked);
+            final List<UserInfo> users = mContext.getSystemService(UserManager.class).getUsers();
+            for (UserInfo user : users) {
+                try {
+                    if (initLocked) {
+                        mVold.lockUserKey(user.id);
+                    } else {
+                        mVold.unlockUserKey(user.id, user.serialNumber, encodeBytes(null),
+                                encodeBytes(null));
+                    }
+                } catch (Exception e) {
+                    Slog.wtf(TAG, e);
+                }
+            }
+        }
+    }
+
+    private void resetIfBootedAndConnected() {
+        Slog.d(TAG, "Thinking about reset, mBootCompleted=" + mBootCompleted
+                + ", mDaemonConnected=" + mDaemonConnected);
+        if (mBootCompleted && mDaemonConnected) {
+            final List<UserInfo> users = mContext.getSystemService(UserManager.class).getUsers();
+            killMediaProvider(users);
+
+            final int[] systemUnlockedUsers;
+            synchronized (mLock) {
+                systemUnlockedUsers = mSystemUnlockedUsers;
+
+                mDisks.clear();
+                mVolumes.clear();
+
+                addInternalVolumeLocked();
+            }
+
+            try {
+                mVold.reset();
+
+                // Tell vold about all existing and started users
+                for (UserInfo user : users) {
+                    mVold.onUserAdded(user.id, user.serialNumber);
+                }
+                for (int userId : systemUnlockedUsers) {
+                    mVold.onUserStarted(userId);
+                    mStoraged.onUserStarted(userId);
+                }
+                mVold.onSecureKeyguardStateChanged(mSecureKeyguardShowing);
+                mStorageManagerInternal.onReset(mVold);
+            } catch (Exception e) {
+                Slog.wtf(TAG, e);
+            }
+        }
+    }
+
+    private void onUnlockUser(int userId) {
+        Slog.d(TAG, "onUnlockUser " + userId);
+
+        // We purposefully block here to make sure that user-specific
+        // staging area is ready so it's ready for zygote-forked apps to
+        // bind mount against.
+        try {
+            mVold.onUserStarted(userId);
+            mStoraged.onUserStarted(userId);
+        } catch (Exception e) {
+            Slog.wtf(TAG, e);
+        }
+
+        mHandler.obtainMessage(H_

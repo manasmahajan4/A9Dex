@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp">
+
+    <LinearLayout
+        android:id="@+id/track_clicker"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/trackLength"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:fontFamily="@font/raj_font"
+                android:gravity="center"
+                android:scrollHorizontally="true"
+                android:text="129#"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/trackName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/black"
+            android:fontFamily="@font/raj_font"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Lancer Evolution and some toerh things"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filled_bullet"
+        android:id="@+id/hasLink"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="2dp"
+        android:layout_marginBottom="-3dp"
+        android:textColor="@color/very_red"
+        />
+</RelativeLayout>

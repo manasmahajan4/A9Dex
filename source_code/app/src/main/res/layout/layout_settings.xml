@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:background="@color/back_list">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="120dp"
+        android:id="@+id/butt_lang"
+        android:background="@color/back_list">
+
+        <TextView
+            android:id="@+id/current_language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rajdhani_b"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="English"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/nav_triangle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/black"
+            android:layout_margin="10dp"
+            android:src="@drawable/side_triangle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

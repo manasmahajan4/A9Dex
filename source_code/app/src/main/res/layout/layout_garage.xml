@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_list"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fontFamily="@font/raj_font"
+        android:textAllCaps="true"
+        android:textColor="@color/bblack"
+        android:textSize="30dp"
+        android:text="Tap + to add cars" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carlistGarage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/garage_top_holder"
+        android:background="@color/back_list"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="4dp"
+        android:id="@+id/garage_top_holder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raj_font"
+            android:textAllCaps="true"
+            android:text="My Garage"
+            android:textSize="40dp"
+            android:textColor="@color/white" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/testtab"
+            android:id="@+id/add_cars"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/testtab"
+                android:fontFamily="@font/rajdhani_b"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/back_list"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="2dp"
+                android:src="@drawable/side_triangle" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

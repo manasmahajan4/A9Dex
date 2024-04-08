@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1565C0</color>
+    <color name="bblack">#212121</color>
+    <color name="fblack">#212121</color>
+    <color name="lblack">#404040</color>
+    <color name="light_blu">#2196f3</color>
+    <color name="dark_blu">#0d47a1</color>
+    <color name="light_pink">#ff4081</color>
+    <color name="dark_pink">#E91E63</color>
+    <color name="light_brown">#795548</color>
+    <color name="dark_brown">#3e2723</color>
+    <color name="light_yello">#ffc107</color>
+    <color name="dark_yello">#ff6f00</color>
+    <color name="light_pur">#3f51b5</color>
+    <color name="dark_pur">#1a237e</color>
+    <color name="light_teal">#009688</color>
+    <color name="dark_teal">#004d40</color>
+    <color name="d_light">#424242</color>
+    <color name="d_dark">#BF360C</color>
+    <color name="pro">#422040</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FA0</color>
+    <color name="white">#FFF</color>
+    <color name="credits">#FFC107</color>
+    <color name="back_list">#37474F</color>
+    <color name="tab_selected">#90A4AE</color>
+    <color name="check_selected">#76FF03</color>
+    <color name="nav_normal_back">#0D47A1</color>
+    <color name="nav_normal_back_transparent">#aa0D47A1</color>
+    <color name="nav_normal_border">#1565C0</color>
+    <color name="diag_back">#263238</color>
+    <color name="very_red">#FF1744</color>
+
+    <color name="iu_n">#00B0FF</color>
+    <color name="iu_b">#0277BD</color>
+    <color name="ir_n">#D500F9</color>
+    <color name="ir_b">#8E24AA</color>
+    <color name="ie_n">#FFEA00</color>
+    <color name="ie_b">#F9A825</color>
+
+    <color name="leftCar">#c3fb12</color>
+    <color name="rightCar">#33eff9</color>
+    <color name="a9accent">#ff0054</color>
+</resources>

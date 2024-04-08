@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white"
+    android:padding="1dp"
+    android:layout_width="50dp" android:layout_height="50dp">
+
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:text="A"
+        android:textColor="@color/back_list"
+        android:background="@drawable/testtab"
+        android:fontFamily="@font/rajdhani_b"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/nav_triangle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="2dp"
+        android:src="@drawable/side_triangle" />
+</RelativeLayout>

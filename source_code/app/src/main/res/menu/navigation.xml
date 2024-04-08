@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_cars"
+        android:icon="@drawable/nav_car"
+        android:title="@string/cars" />
+
+    <item
+        android:id="@+id/navigation_routes"
+        android:icon="@drawable/nav_car"
+        android:title="@string/route" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/nav_car"
+        android:title="@string/settings" />
+
+</menu>

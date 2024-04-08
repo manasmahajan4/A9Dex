@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_holder"
+    android:layout_width="160dp"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/accent_selector"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/a9accent"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/nav_back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:background="@color/nav_normal_border">
+
+        <RelativeLayout
+            android:id="@+id/nav_back1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/nav_normal_back">
+
+            <ImageView
+                android:id="@+id/nav_img"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_settings"
+                android:tint="@color/nav_normal_border" />
+
+            <ImageView
+                android:id="@+id/nav_triangle"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="2dp"
+                android:src="@drawable/side_triangle"
+                android:tint="@color/nav_normal_border" />
+
+            <TextView
+                android:id="@+id/nav_title"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/rajdhani__sb"
+                android:gravity="end"
+                android:text="Car Comparison"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

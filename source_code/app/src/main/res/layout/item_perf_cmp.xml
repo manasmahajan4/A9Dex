@@ -1,0 +1,34 @@
+evilka"</string>
+    <string name="autofill_state" msgid="6988894195520044613">"Zvezna država"</string>
+    <string name="autofill_zip_code" msgid="8697544592627322946">"Poštna številka"</string>
+    <string name="autofill_county" msgid="237073771020362891">"Okrožje"</string>
+    <string name="autofill_island" msgid="4020100875984667025">"Otok"</string>
+    <string name="autofill_district" msgid="8400735073392267672">"Okraj"</string>
+    <string name="autofill_department" msgid="5343279462564453309">"Departma"</string>
+    <string name="autofill_prefecture" msgid="2028499485065800419">"Prefektura"</string>
+    <string name="autofill_parish" msgid="8202206105468820057">"Župnija"</string>
+    <string name="autofill_area" msgid="3547409050889952423">"Območje"</string>
+    <string name="autofill_emirate" msgid="2893880978835698818">"Emirat"</string>
+    <string name="permlab_readHistoryBookmarks" msgid="3775265775405106983">"branje spletnih zaznamkov in zgodovine"</string>
+    <string name="permdesc_readHistoryBookmarks" msgid="8462378226600439658">"Aplikaciji omogoča, da prebere zgodovino vseh URL-jev, ki jih je obiskal brskalnik, in vse zaznamke brskalnika. Opomba: Tega dovoljenja ne morejo uveljavljati drugi brskalniki ali aplikacije, s katerimi je mogoče brskati po spletu."</string>
+    <string name="permlab_writeHistoryBookmarks" msgid="3714785165273314490">"zapisovanje spletnih zaznamkov in zgodovine"</string>
+    <string name="permdesc_writeHistoryBookmarks" product="tablet" msgid="6825527469145760922">"Aplikaciji omogoča spreminjanje zgodovine ali zaznamkov brskalnika v tabličnem računalniku. S tem lahko aplikacija izbriše ali spremeni podatke v brskalniku. Opomba: Tega dovoljenja ne morejo uveljavljati drugi brskalniki ali aplikacije, s katerimi je mogoče brskati po spletu."</string>
+    <string name="permdesc_writeHistoryBookmarks" product="tv" msgid="7007393823197766548">"Aplikaciji dovoljuje spreminjanje zgodovine ali zaznamkov brskalnika v televizorju. S tem lahko aplikacija izbriše ali spremeni podatke v brskalniku. Opomba: Tega dovoljenja morda ne morejo uveljavljati drugi brskalniki ali aplikacije, s katerimi je mogoče brskati po spletu."</string>
+    <string name="permdesc_writeHistoryBookmarks" product="default" msgid="8497389531014185509">"Aplikaciji omogoča spreminjanje zgodovine ali zaznamkov brskalnika v telefonu. S tem lahko aplikacija izbriše ali spremeni podatke v brskalniku. Opomba: Tega dovoljenja ne morejo uveljavljati drugi brskalniki ali aplikacije, s katerimi je mogoče brskati po spletu."</string>
+    <string name="permlab_setAlarm" msgid="1379294556362091814">"nastavitev alarma"</string>
+    <string name="permdesc_setAlarm" msgid="316392039157473848">"Aplikaciji omogoča nastavitev alarma v nameščeni aplikaciji budilke. Nekatere aplikacije budilke morda nimajo te funkcije."</string>
+    <string name="permlab_addVoicemail" msgid="5525660026090959044">"dodajanje odzivnika"</string>
+    <string name="permdesc_addVoicemail" msgid="6604508651428252437">"Aplikaciji omogoča dodajanje sporočil prejetim sporočilom odzivnika."</string>
+    <string name="permlab_writeGeolocationPermissions" msgid="5962224158955273932">"Spreminjanje dovoljenj za geolokacijo brskalnika"</string>
+    <string name="permdesc_writeGeolocationPermissions" msgid="1083743234522638747">"Aplikaciji omogoča spreminjanje geolokacijskih dovoljenj v brskalniku. Zlonamerne aplikacije lahko to izkoristijo za pošiljanje podatkov o lokaciji poljubnim spletnim mestom."</string>
+    <string name="save_password_message" msgid="767344687139195790">"Ali želite, da si brskalnik zapomni to geslo?"</string>
+    <string name="save_password_notnow" msgid="6389675316706699758">"Ne zdaj"</string>
+    <string name="save_password_remember" msgid="6491879678996749466">"Zapomni si"</string>
+    <string name="save_password_never" msgid="8274330296785855105">"Nikoli"</string>
+    <string name="open_permission_deny" msgid="7374036708316629800">"Nimate dovoljenja za odpiranje te strani."</string>
+    <string name="text_copied" msgid="4985729524670131385">"Besedilo, kopirano v odložišče."</string>
+    <string name="more_item_label" msgid="4650918923083320495">"Več"</string>
+    <string name="prepend_shortcut_label" msgid="2572214461676015642">"Meni+"</string>
+    <string name="menu_space_shortcut_label" msgid="2410328639272162537">"presledek"</string>
+    <string name="menu_enter_shortcut_label" msgid="2743362785111309668">"vnesi"</string>
+    <string name="menu_delete_shortc
